@@ -1,0 +1,15 @@
+{
+   "files.associations": {
+      "ostream": "cpp",
+      "iostream": "cpp",
+      "ios": "cpp",
+      "__locale": "cpp",
+      "fstream": "cpp",
+      "iosfwd": "cpp",
+      "__bit_reference": "cpp",
+      "bitset": "cpp",
+      "chrono": "cpp",
+      "unordered_map": "cpp",
+      "algorithm": "cpp"
+   }
+}

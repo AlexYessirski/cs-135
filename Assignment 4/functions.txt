@@ -1,0 +1,52 @@
+CHECKING IF THE INPUT FOR WHO WANTS TO GO FIRST IS VALID:
+do {
+   cout << "\n";
+   cout << "Would you like to go first? (Y/N) : ";
+   cin >> answer;
+   switch (answer) {
+      case 'y':
+      currentplayer = 1;
+      break;
+      case 'n':
+      currentplayer = 0;
+      break;
+      default:
+      cout << "Please, answer Y or N" << endl;
+   }
+   } while (!isdigit(currentplayer));
+
+CHECK CURRENT STATE OF MATCHES:
+
+for (int i = 0; i < matches;) {
+        if (i + 5 > matches) {
+         cout << match;
+         i=(i+1);
+        } else {
+        cout << match;
+        cout << match;
+        cout << match;
+        cout << match;
+        cout << match;
+        cout << " ";
+        i=(i+5);
+        }
+      }
+
+CHECK matches taken
+
+      if (matchtake == 1 or matchtake == 2 or matchtake == 3) 
+      {
+         matches = (matches-matchtake);
+      } 
+         if (matchtake < 1) {
+            cin.clear();
+            cout << "Must remove at least one match. \n";
+         } 
+         if (matchtake > 3) {
+            cin.clear();
+            cout << "Cannot remove more than three matches. \n";
+         }
+         if(!(isdigit(matchtake))){
+            cin.clear();
+            cout << "Please, type 1, 2, or 3 as your response. \n";
+         }
